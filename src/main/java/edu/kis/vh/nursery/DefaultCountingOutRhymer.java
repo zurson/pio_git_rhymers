@@ -17,7 +17,7 @@ public class DefaultCountingOutRhymer {
     }
 
     public boolean isFull() {
-        return total == MAX_NUMBERS-1;
+        return total == MAX_NUMBERS-INITIAL_VALUE;
     }
 
     protected int peekaboo() {
