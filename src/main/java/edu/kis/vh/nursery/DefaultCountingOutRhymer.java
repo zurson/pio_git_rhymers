@@ -3,6 +3,7 @@ package edu.kis.vh.nursery;
 public class DefaultCountingOutRhymer {
 
     public static final int INITIAL_VALUE = -1;
+    public static final int ERROR_CODE = -1;
     public static final int MAX_NUMBERS = 12;
     private final int[] numbers = new int[MAX_NUMBERS];
 
@@ -17,18 +18,18 @@ public class DefaultCountingOutRhymer {
     }
 
     public boolean isFull() {
-        return total == MAX_NUMBERS-INITIAL_VALUE;
+        return total == MAX_NUMBERS-1;
     }
 
     protected int peekaboo() {
         if (callCheck())
-            return INITIAL_VALUE ;
+            return ERROR_CODE ;
         return numbers[total];
     }
 
     public int countOut() {
         if (callCheck())
-            return INITIAL_VALUE;
+            return ERROR_CODE;
         return numbers[total--];
     }
 
