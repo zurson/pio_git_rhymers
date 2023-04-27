@@ -5,9 +5,9 @@ import edu.kis.vh.nursery.factory.RhymersFactory;
 
 class RhymersDemo {
 
-    public static final int MAX_NUMBERS_IN_ROW = 15;
-    public static final int ROWS = 15;
-    public static final int MAX_RANDOM_NUMBER = 20;
+    private static final int MAX_NUMBERS_IN_ROW = 15;
+    private static final int ROWS = 15;
+    private static final int MAX_RANDOM_NUMBER = 20;
 
     public static void main(String[] args) {
         RhymersFactory factory = new DefaultRhymersFactory();
